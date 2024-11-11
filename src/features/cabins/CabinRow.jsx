@@ -89,7 +89,11 @@ function CabinRow({ cabin }) {
           <Menus.Menu>
             <Menus.Toggle id={canbinId} />
             <Menus.List id={canbinId}>
-              <Menus.Button icon={<HiSquare2Stack />} onClick={handleDuplicate}>
+              <Menus.Button
+                icon={<HiSquare2Stack />}
+                onClick={handleDuplicate}
+                disabled={isCreating}
+              >
                 Duplicate
               </Menus.Button>
 
